@@ -1,0 +1,402 @@
+# API Test Examples in JSON Format
+
+================================================================================
+POST /tasks/parse/add (5 tests)
+================================================================================
+
+Test 1: Simple gym session
+---
+{"prompt": "gym session tomorrow"}
+
+Test 2: Study session with duration
+---
+{"prompt": "study session tomorrow for 2 hours"}
+
+Test 3: Work project with deadline
+---
+{"prompt": "finish project report by friday"}
+
+Test 4: Meeting with location
+---
+{"prompt": "meeting with team at office on monday"}
+
+Test 5: Important personal task
+---
+{"prompt": "buy groceries very important"}
+
+
+================================================================================
+POST /tasks/parse/modify (5 tests)
+================================================================================
+
+Test 6: Make task more important
+---
+{
+  "task": {
+    "name": "Gym session",
+    "start": "2026-04-30T06:00:00",
+    "deadline": "2026-04-30T23:59:00",
+    "difficulty": 0.5,
+    "duration": 60,
+    "category": ["fitness"],
+    "location": "gym",
+    "importance": 0.3,
+    "fixed_time": false,
+    "fixed_start": null
+  },
+  "prompt": "make it more important"
+}
+
+Test 7: Delay deadline
+---
+{
+  "task": {
+    "name": "Study session",
+    "start": "2026-05-01T18:00:00",
+    "deadline": "2026-05-01T20:00:00",
+    "difficulty": 0.7,
+    "duration": 120,
+    "category": ["study"],
+    "location": "library",
+    "importance": 0.5,
+    "fixed_time": false,
+    "fixed_start": null
+  },
+  "prompt": "delay to tomorrow"
+}
+
+Test 8: Change location
+---
+{
+  "task": {
+    "name": "Project presentation",
+    "start": "2026-05-02T09:00:00",
+    "deadline": "2026-05-02T17:00:00",
+    "difficulty": 0.8,
+    "duration": 480,
+    "category": ["work"],
+    "location": "office",
+    "importance": 0.85,
+    "fixed_time": false,
+    "fixed_start": null
+  },
+  "prompt": "move to home"
+}
+
+Test 9: Reduce difficulty
+---
+{
+  "task": {
+    "name": "Read book",
+    "start": "2026-05-03T20:00:00",
+    "deadline": "2026-05-03T22:00:00",
+    "difficulty": 0.6,
+    "duration": 120,
+    "category": ["hobby"],
+    "location": "home",
+    "importance": 0.4,
+    "fixed_time": false,
+    "fixed_start": null
+  },
+  "prompt": "make it easier"
+}
+
+Test 10: Extend duration
+---
+{
+  "task": {
+    "name": "Call doctor",
+    "start": "2026-05-04T10:00:00",
+    "deadline": "2026-05-04T10:30:00",
+    "difficulty": 0.2,
+    "duration": 30,
+    "category": ["personal"],
+    "location": "home",
+    "importance": 0.6,
+    "fixed_time": false,
+    "fixed_start": null
+  },
+  "prompt": "longer time"
+}
+
+
+================================================================================
+POST /tasks/ (10 tests)
+================================================================================
+
+--- 5 tests WITH draft_id ---
+
+Test 11: Commit draft - gym task
+---
+{
+  "draft_id": "d38bf3da-c49b-46ce-a4c4-652cf2957ab3",
+  "task": {
+    "name": "Gym session",
+    "start": "2026-04-30T06:00:00",
+    "deadline": "2026-04-30T23:59:00",
+    "difficulty": 0.85,
+    "duration": 90,
+    "category": ["fitness"],
+    "location": "gym",
+    "importance": 0.5,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 12: Commit draft - study task
+---
+{
+  "draft_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "task": {
+    "name": "Study session",
+    "start": "2026-05-01T18:00:00",
+    "deadline": "2026-05-01T20:00:00",
+    "difficulty": 0.7,
+    "duration": 120,
+    "category": ["study"],
+    "location": "library",
+    "importance": 0.9,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 13: Commit draft - work project
+---
+{
+  "draft_id": "b2c3d4e5-f678-9012-bcde-f12345678901",
+  "task": {
+    "name": "Project presentation",
+    "start": "2026-05-02T09:00:00",
+    "deadline": "2026-05-02T17:00:00",
+    "difficulty": 0.8,
+    "duration": 480,
+    "category": ["work"],
+    "location": "office",
+    "importance": 0.85,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 14: Commit draft - easy task
+---
+{
+  "draft_id": "c3d4e5f6-7890-1234-cdef-123456789012",
+  "task": {
+    "name": "Read book",
+    "start": "2026-05-03T20:00:00",
+    "deadline": "2026-05-03T22:00:00",
+    "difficulty": 0.3,
+    "duration": 120,
+    "category": ["hobby"],
+    "location": "home",
+    "importance": 0.4,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 15: Commit draft - short task
+---
+{
+  "draft_id": "d4e5f678-9012-3456-defg-234567890123",
+  "task": {
+    "name": "Call doctor",
+    "start": "2026-05-04T10:00:00",
+    "deadline": "2026-05-04T10:30:00",
+    "difficulty": 0.2,
+    "duration": 30,
+    "category": ["personal"],
+    "location": "home",
+    "importance": 0.6,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+--- 5 tests WITHOUT draft_id (Manual) ---
+
+Test 16: Create gym task manually
+---
+{
+  "task": {
+    "name": "Gym session",
+    "start": "2026-04-30T06:00:00",
+    "deadline": "2026-04-30T23:59:00",
+    "difficulty": 0.5,
+    "duration": 60,
+    "category": ["fitness"],
+    "location": "gym",
+    "importance": 0.5,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 17: Create work task manually
+---
+{
+  "task": {
+    "name": "Team meeting",
+    "start": "2026-05-01T14:00:00",
+    "deadline": "2026-05-01T15:00:00",
+    "difficulty": 0.6,
+    "duration": 60,
+    "category": ["work"],
+    "location": "office",
+    "importance": 0.8,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 18: Create study task manually
+---
+{
+  "task": {
+    "name": "Study session",
+    "start": "2026-05-02T18:00:00",
+    "deadline": "2026-05-02T20:00:00",
+    "difficulty": 0.7,
+    "duration": 120,
+    "category": ["study"],
+    "location": "library",
+    "importance": 0.7,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 19: Create personal task manually
+---
+{
+  "task": {
+    "name": "Buy groceries",
+    "start": "2026-05-03T17:00:00",
+    "deadline": "2026-05-03T18:00:00",
+    "difficulty": 0.2,
+    "duration": 60,
+    "category": ["personal"],
+    "location": "store",
+    "importance": 0.5,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 20: Create hobby task manually
+---
+{
+  "task": {
+    "name": "Play guitar",
+    "start": "2026-05-04T19:00:00",
+    "deadline": "2026-05-04T21:00:00",
+    "difficulty": 0.4,
+    "duration": 120,
+    "category": ["hobby"],
+    "location": "home",
+    "importance": 0.6,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+
+================================================================================
+POST /tasks/{id}/update (5 tests)
+================================================================================
+
+Note: Replace {id} with actual task UUID from previous commit response.
+All tests use source=unscheduled.
+
+Test 21: Update task - increase importance
+---
+POST /tasks/{id}/update?source=unscheduled
+{
+  "task": {
+    "name": "Gym session",
+    "start": "2026-04-30T06:00:00",
+    "deadline": "2026-04-30T23:59:00",
+    "difficulty": 0.5,
+    "duration": 60,
+    "category": ["fitness"],
+    "location": "gym",
+    "importance": 0.9,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 22: Update task - change duration and difficulty
+---
+POST /tasks/{id}/update?source=unscheduled
+{
+  "task": {
+    "name": "Study session",
+    "start": "2026-05-01T18:00:00",
+    "deadline": "2026-05-01T20:00:00",
+    "difficulty": 0.8,
+    "duration": 180,
+    "category": ["study"],
+    "location": "library",
+    "importance": 0.7,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 23: Update task - change location
+---
+POST /tasks/{id}/update?source=unscheduled
+{
+  "task": {
+    "name": "Project presentation",
+    "start": "2026-05-02T09:00:00",
+    "deadline": "2026-05-02T17:00:00",
+    "difficulty": 0.8,
+    "duration": 480,
+    "category": ["work"],
+    "location": "home",
+    "importance": 0.85,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 24: Update task - change category
+---
+POST /tasks/{id}/update?source=unscheduled
+{
+  "task": {
+    "name": "Read book",
+    "start": "2026-05-03T20:00:00",
+    "deadline": "2026-05-03T22:00:00",
+    "difficulty": 0.3,
+    "duration": 120,
+    "category": ["personal"],
+    "location": "home",
+    "importance": 0.4,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}
+
+Test 25: Update task - extend deadline
+---
+POST /tasks/{id}/update?source=unscheduled
+{
+  "task": {
+    "name": "Call doctor",
+    "start": "2026-05-04T10:00:00",
+    "deadline": "2026-05-05T10:30:00",
+    "difficulty": 0.2,
+    "duration": 30,
+    "category": ["personal"],
+    "location": "home",
+    "importance": 0.6,
+    "fixed_time": false,
+    "fixed_start": null
+  }
+}

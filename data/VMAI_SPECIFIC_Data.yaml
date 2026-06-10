@@ -1,0 +1,1186 @@
+examples:
+- input: clean the database
+  output:
+    name: clean database
+    category: work
+    difficulty: 0.3
+    importance: 0.6
+    duration: 30
+    fixed_time: false
+    recurrent: false
+- input: clean the kitchen
+  output:
+    name: clean kitchen
+    category: home
+    difficulty: 0.4
+    importance: 0.5
+    duration: 30
+    fixed_time: false
+    recurrent: false
+- input: clean the garage
+  output:
+    name: clean garage
+    category: home
+    difficulty: 0.5
+    importance: 0.4
+    duration: 60
+    fixed_time: false
+    recurrent: false
+- input: clean the report
+  output:
+    name: clean report
+    category: work
+    difficulty: 0.3
+    importance: 0.5
+    duration: 20
+    fixed_time: false
+    recurrent: false
+- input: review the budget
+  output:
+    name: review budget
+    category: finance
+    difficulty: 0.5
+    importance: 0.7
+    duration: 45
+    fixed_time: false
+    recurrent: false
+- input: review the essay
+  output:
+    name: review essay
+    category: study
+    difficulty: 0.6
+    importance: 0.7
+    duration: 40
+    fixed_time: false
+    recurrent: false
+- input: review the code
+  output:
+    name: review code
+    category: work
+    difficulty: 0.5
+    importance: 0.6
+    duration: 30
+    fixed_time: false
+    recurrent: false
+- input: schedule a meeting
+  output:
+    name: schedule meeting
+    category: work
+    difficulty: 0.2
+    importance: 0.6
+    duration: 15
+    fixed_time: false
+    recurrent: false
+- input: schedule a haircut
+  output:
+    name: schedule haircut
+    category: personal
+    difficulty: 0.1
+    importance: 0.4
+    duration: 10
+    fixed_time: false
+    recurrent: false
+- input: schedule a doctor visit
+  output:
+    name: schedule doctor visit
+    category: health
+    difficulty: 0.2
+    importance: 0.8
+    duration: 10
+    fixed_time: false
+    recurrent: false
+- input: book a table
+  output:
+    name: book table
+    category: social
+    difficulty: 0.1
+    importance: 0.4
+    duration: 5
+    fixed_time: false
+    recurrent: false
+- input: book a hotel
+  output:
+    name: book hotel
+    category: travel
+    difficulty: 0.3
+    importance: 0.6
+    duration: 20
+    fixed_time: false
+    recurrent: false
+- input: organize the files
+  output:
+    name: organize files
+    category: admin
+    difficulty: 0.3
+    importance: 0.4
+    duration: 45
+    fixed_time: false
+    recurrent: false
+- input: organize the closet
+  output:
+    name: organize closet
+    category: home
+    difficulty: 0.4
+    importance: 0.3
+    duration: 60
+    fixed_time: false
+    recurrent: false
+- input: organize the event
+  output:
+    name: organize event
+    category: social
+    difficulty: 0.6
+    importance: 0.7
+    duration: 90
+    fixed_time: false
+    recurrent: false
+- input: plan the trip
+  output:
+    name: plan trip
+    category: travel
+    difficulty: 0.4
+    importance: 0.6
+    duration: 60
+    fixed_time: false
+    recurrent: false
+- input: plan the menu
+  output:
+    name: plan menu
+    category: home
+    difficulty: 0.3
+    importance: 0.4
+    duration: 20
+    fixed_time: false
+    recurrent: false
+- input: plan the workout
+  output:
+    name: plan workout
+    category: fitness
+    difficulty: 0.3
+    importance: 0.5
+    duration: 15
+    fixed_time: false
+    recurrent: false
+- input: write the email
+  output:
+    name: write email
+    category: work
+    difficulty: 0.2
+    importance: 0.5
+    duration: 15
+    fixed_time: false
+    recurrent: false
+- input: write the journal
+  output:
+    name: write journal
+    category: personal
+    difficulty: 0.1
+    importance: 0.3
+    duration: 20
+    fixed_time: false
+    recurrent: false
+- input: write the story
+  output:
+    name: write story
+    category: creative
+    difficulty: 0.5
+    importance: 0.4
+    duration: 60
+    fixed_time: false
+    recurrent: false
+- input: call the client
+  output:
+    name: call client
+    category: work
+    difficulty: 0.3
+    importance: 0.7
+    duration: 20
+    fixed_time: false
+    recurrent: false
+- input: call the dentist
+  output:
+    name: call dentist
+    category: health
+    difficulty: 0.1
+    importance: 0.6
+    duration: 5
+    fixed_time: false
+    recurrent: false
+- input: call a friend
+  output:
+    name: call friend
+    category: social
+    difficulty: 0.1
+    importance: 0.4
+    duration: 15
+    fixed_time: false
+    recurrent: false
+- input: buy a gift
+  output:
+    name: buy gift
+    category: shopping
+    difficulty: 0.2
+    importance: 0.5
+    duration: 30
+    fixed_time: false
+    recurrent: false
+- input: buy groceries
+  output:
+    name: buy groceries
+    category: shopping
+    difficulty: 0.2
+    importance: 0.6
+    duration: 45
+    fixed_time: false
+    recurrent: false
+- input: buy a domain
+  output:
+    name: buy domain
+    category: finance
+    difficulty: 0.3
+    importance: 0.5
+    duration: 15
+    fixed_time: false
+    recurrent: false
+- input: update the resume
+  output:
+    name: update resume
+    category: admin
+    difficulty: 0.4
+    importance: 0.6
+    duration: 45
+    fixed_time: false
+    recurrent: false
+- input: update the software
+  output:
+    name: update software
+    category: admin
+    difficulty: 0.2
+    importance: 0.5
+    duration: 20
+    fixed_time: false
+    recurrent: false
+- input: update the curriculum
+  output:
+    name: update curriculum
+    category: learning
+    difficulty: 0.6
+    importance: 0.5
+    duration: 60
+    fixed_time: false
+    recurrent: false
+- input: I need to finish the quarterly report by Friday, it should take about 3 hours at the office, really important and
+    quite challenging
+  output:
+    name: quarterly report
+    deadline: Friday
+    duration: 180
+    category: work
+    difficulty: 0.8
+    importance: 0.9
+    location: office
+    fixed_time: false
+    recurrent: false
+- input: schedule the team standup every Monday Wednesday and Friday at 9am for 15 minutes at the office, its a routine thing
+  output:
+    name: team standup
+    duration: 15
+    category: work
+    difficulty: 0.1
+    importance: 0.6
+    location: office
+    fixed_time: true
+    fixed_start: 09:00
+    recurrent: true
+    recurrence_days: Monday,Wednesday,Friday
+- input: prepare the client presentation by next week, should take 2 hours, very important, working from home on it
+  output:
+    name: client presentation
+    deadline: next week
+    duration: 120
+    category: work
+    difficulty: 0.6
+    importance: 0.9
+    location: home
+    fixed_time: false
+    recurrent: false
+- input: study for the chemistry final by next Monday at the library, its a tough one so probably 4 hours of focused work
+  output:
+    name: chemistry final study
+    deadline: next Monday
+    duration: 240
+    category: study
+    difficulty: 0.85
+    importance: 0.9
+    location: library
+    fixed_time: false
+    recurrent: false
+- input: review the spanish flashcards every day for 20 minutes, its pretty easy but important for the exam
+  output:
+    name: spanish flashcards
+    duration: 20
+    category: study
+    difficulty: 0.2
+    importance: 0.7
+    fixed_time: false
+    recurrent: true
+    recurrence_days: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+- input: write the thesis proposal by end of month, needs about 3 hours of deep work, super critical for graduation
+  output:
+    name: thesis proposal
+    deadline: end of month
+    duration: 180
+    category: study
+    difficulty: 0.9
+    importance: 0.95
+    fixed_time: false
+    recurrent: false
+- input: go to the gym tomorrow at 6am for an hour, its a heavy leg day so pretty challenging and important for my goals
+  output:
+    name: gym leg day
+    deadline: tomorrow
+    duration: 60
+    category: fitness
+    difficulty: 0.85
+    importance: 0.7
+    location: gym
+    fixed_time: true
+    fixed_start: 06:00
+    recurrent: false
+- input: do yoga every Tuesday and Thursday at 7am for 45 minutes at home, its a gentle session so not too hard
+  output:
+    name: yoga session
+    duration: 45
+    category: fitness
+    difficulty: 0.3
+    importance: 0.5
+    location: home
+    fixed_time: true
+    fixed_start: 07:00
+    recurrent: true
+    recurrence_days: Tuesday,Thursday
+- input: go for a run in the park this Saturday morning for 30 minutes, moderate pace, good for cardio health
+  output:
+    name: park run
+    start: Saturday
+    duration: 30
+    category: fitness
+    difficulty: 0.5
+    importance: 0.5
+    location: park
+    fixed_time: false
+    recurrent: false
+- input: take medication every day at 8am, its quick just 2 minutes but absolutely critical for my health routine
+  output:
+    name: take medication
+    duration: 2
+    category: health
+    difficulty: 0.05
+    importance: 0.95
+    fixed_time: true
+    fixed_start: 08:00
+    recurrent: true
+    recurrence_days: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+- input: schedule dentist appointment for next Wednesday at 10am, should take about an hour, quite important
+  output:
+    name: dentist appointment
+    duration: 60
+    category: health
+    difficulty: 0.2
+    importance: 0.8
+    fixed_time: true
+    fixed_start: '10:00'
+    recurrent: false
+- input: meditate for 15 minutes every evening at home, its easy but helps a lot with stress management
+  output:
+    name: evening meditation
+    duration: 15
+    category: health
+    difficulty: 0.1
+    importance: 0.6
+    location: home
+    fixed_time: false
+    recurrent: true
+    recurrence_days: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+- input: read a novel tonight at 9pm for about an hour, its relaxing so low difficulty and not urgent
+  output:
+    name: read novel
+    duration: 60
+    category: personal
+    difficulty: 0.1
+    importance: 0.3
+    fixed_time: true
+    fixed_start: '21:00'
+    recurrent: false
+- input: go for a walk in the park this weekend for 30 minutes, easy and good for mental health
+  output:
+    name: park walk
+    start: this weekend
+    duration: 30
+    category: personal
+    difficulty: 0.1
+    importance: 0.4
+    location: park
+    fixed_time: false
+    recurrent: false
+- input: write in my journal every night before bed for 15 minutes at home, its a personal reflection habit
+  output:
+    name: journal writing
+    duration: 15
+    category: personal
+    difficulty: 0.1
+    importance: 0.4
+    location: home
+    fixed_time: false
+    recurrent: true
+    recurrence_days: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+- input: pay the electricity bill by tomorrow, its quick maybe 10 minutes but very important to avoid late fees
+  output:
+    name: pay electricity bill
+    deadline: tomorrow
+    duration: 10
+    category: finance
+    difficulty: 0.1
+    importance: 0.9
+    fixed_time: false
+    recurrent: false
+- input: review my investment portfolio this Sunday for about an hour, its moderately complex and important for financial
+    planning
+  output:
+    name: review portfolio
+    start: Sunday
+    duration: 60
+    category: finance
+    difficulty: 0.6
+    importance: 0.7
+    fixed_time: false
+    recurrent: false
+- input: file annual taxes by April 15th, its complicated probably 3 hours and absolutely critical
+  output:
+    name: file annual taxes
+    deadline: April 15th
+    duration: 180
+    category: finance
+    difficulty: 0.8
+    importance: 0.95
+    fixed_time: false
+    recurrent: false
+- input: clean the bathroom this Saturday for 45 minutes, its moderately hard and should be done regularly
+  output:
+    name: clean bathroom
+    start: Saturday
+    duration: 45
+    category: home
+    difficulty: 0.5
+    importance: 0.5
+    fixed_time: false
+    recurrent: false
+- input: do laundry every Wednesday and Sunday for about an hour at home, its a routine chore not too difficult
+  output:
+    name: do laundry
+    duration: 60
+    category: home
+    difficulty: 0.2
+    importance: 0.6
+    location: home
+    fixed_time: false
+    recurrent: true
+    recurrence_days: Wednesday,Sunday
+- input: fix the leaking kitchen faucet by next week, its moderately challenging and important to prevent water damage
+  output:
+    name: fix kitchen faucet
+    deadline: next week
+    duration: 45
+    category: home
+    difficulty: 0.55
+    importance: 0.75
+    location: home
+    fixed_time: false
+    recurrent: false
+- input: pick up kids from school every weekday at 3pm, its quick 15 minutes but absolutely critical
+  output:
+    name: pick up kids
+    duration: 15
+    category: family
+    difficulty: 0.1
+    importance: 0.95
+    fixed_time: true
+    fixed_start: '15:00'
+    recurrent: true
+    recurrence_days: Monday,Tuesday,Wednesday,Thursday,Friday
+- input: help kids with homework every evening at 6pm for 30 minutes at home, moderately challenging but important
+  output:
+    name: help with homework
+    duration: 30
+    category: family
+    difficulty: 0.4
+    importance: 0.7
+    location: home
+    fixed_time: true
+    fixed_start: '18:00'
+    recurrent: true
+    recurrence_days: Monday,Tuesday,Wednesday,Thursday,Friday
+- input: plan the family reunion by next month, its a big task taking about 2 hours and very important for everyone
+  output:
+    name: plan family reunion
+    deadline: next month
+    duration: 120
+    category: family
+    difficulty: 0.5
+    importance: 0.8
+    fixed_time: false
+    recurrent: false
+- input: meet friends for coffee this Saturday at 2pm at the coffee shop on Main Street, its casual for about an hour
+  output:
+    name: coffee with friends
+    start: Saturday
+    duration: 60
+    category: social
+    difficulty: 0.1
+    importance: 0.4
+    location: coffee shop
+    fixed_time: true
+    fixed_start: '14:00'
+    recurrent: false
+- input: attend the birthday party next Friday at 7pm, its at the restaurant downtown and should be fun for 2 hours
+  output:
+    name: birthday party
+    start: next Friday
+    duration: 120
+    category: social
+    difficulty: 0.1
+    importance: 0.5
+    location: restaurant
+    fixed_time: true
+    fixed_start: '19:00'
+    recurrent: false
+- input: have dinner with neighbors every first Friday of the month at 6pm at home, its relaxed and good for community
+  output:
+    name: dinner with neighbors
+    duration: 90
+    category: social
+    difficulty: 0.1
+    importance: 0.4
+    location: home
+    fixed_time: true
+    fixed_start: '18:00'
+    recurrent: true
+    recurrence_days: Friday
+- input: send the package at the post office by tomorrow, its quick 20 minutes and moderately important
+  output:
+    name: send package
+    deadline: tomorrow
+    duration: 20
+    category: errands
+    difficulty: 0.15
+    importance: 0.5
+    location: post office
+    fixed_time: false
+    recurrent: false
+- input: return the defective item to the store this week, its easy just 30 minutes but should be done soon
+  output:
+    name: return defective item
+    deadline: this week
+    duration: 30
+    category: errands
+    difficulty: 0.2
+    importance: 0.5
+    location: store
+    fixed_time: false
+    recurrent: false
+- input: get the car washed every other Saturday for 30 minutes at the car wash place, its easy maintenance
+  output:
+    name: car wash
+    duration: 30
+    category: errands
+    difficulty: 0.1
+    importance: 0.3
+    location: car wash
+    fixed_time: false
+    recurrent: true
+    recurrence_days: Saturday
+- input: book a flight to Tokyo by next week, its about 30 minutes of research and booking, important for the trip
+  output:
+    name: book flight to Tokyo
+    deadline: next week
+    duration: 30
+    category: travel
+    difficulty: 0.3
+    importance: 0.7
+    fixed_time: false
+    recurrent: false
+- input: pack for the business trip starting Monday, its moderately organized work taking about an hour
+  output:
+    name: pack for business trip
+    start: Monday
+    duration: 60
+    category: travel
+    difficulty: 0.2
+    importance: 0.6
+    fixed_time: false
+    recurrent: false
+- input: renew the passport before the end of the month, its important and takes about 45 minutes at the government office
+  output:
+    name: renew passport
+    deadline: end of month
+    duration: 45
+    category: travel
+    difficulty: 0.3
+    importance: 0.8
+    location: government office
+    fixed_time: false
+    recurrent: false
+- input: paint a landscape this Sunday afternoon for 2 hours at the studio, its moderately creative and personally fulfilling
+  output:
+    name: paint landscape
+    start: Sunday
+    duration: 120
+    category: creative
+    difficulty: 0.4
+    importance: 0.4
+    location: studio
+    fixed_time: false
+    recurrent: false
+- input: edit the YouTube video by Friday, its challenging probably 3 hours and important for the channel growth
+  output:
+    name: edit YouTube video
+    deadline: Friday
+    duration: 180
+    category: creative
+    difficulty: 0.7
+    importance: 0.6
+    fixed_time: false
+    recurrent: false
+- input: write a blog post every Wednesday for about an hour at home, its moderately creative and good for sharing ideas
+  output:
+    name: write blog post
+    duration: 60
+    category: creative
+    difficulty: 0.5
+    importance: 0.4
+    location: home
+    fixed_time: false
+    recurrent: true
+    recurrence_days: Wednesday
+- input: practice piano every Monday and Wednesday at 5pm for 45 minutes at home, its moderately challenging and important
+    for skill building
+  output:
+    name: piano practice
+    duration: 45
+    category: learning
+    difficulty: 0.5
+    importance: 0.5
+    location: home
+    fixed_time: true
+    fixed_start: '17:00'
+    recurrent: true
+    recurrence_days: Monday,Wednesday
+- input: take the online Python course by next month, its challenging about 2 hours per session and important for career
+  output:
+    name: Python online course
+    deadline: next month
+    duration: 120
+    category: learning
+    difficulty: 0.7
+    importance: 0.8
+    fixed_time: false
+    recurrent: false
+- input: learn Spanish vocabulary every day for 20 minutes, its easy but important for the upcoming trip
+  output:
+    name: Spanish vocabulary
+    duration: 20
+    category: learning
+    difficulty: 0.2
+    importance: 0.6
+    fixed_time: false
+    recurrent: true
+    recurrence_days: Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+- input: organize the email inbox this weekend for about 30 minutes at home, its easy but good for productivity
+  output:
+    name: organize email inbox
+    start: this weekend
+    duration: 30
+    category: admin
+    difficulty: 0.25
+    importance: 0.4
+    location: home
+    fixed_time: false
+    recurrent: false
+- input: backup all files to cloud by Friday, its moderately important and takes about 45 minutes
+  output:
+    name: cloud backup
+    deadline: Friday
+    duration: 45
+    category: admin
+    difficulty: 0.3
+    importance: 0.7
+    fixed_time: false
+    recurrent: false
+- input: update the resume by end of week, its moderately challenging taking about an hour and important for job search
+  output:
+    name: update resume
+    deadline: end of week
+    duration: 60
+    category: admin
+    difficulty: 0.4
+    importance: 0.7
+    fixed_time: false
+    recurrent: false
+- input: buy groceries at the supermarket this Saturday for about 45 minutes, its routine and important for the week
+  output:
+    name: grocery shopping
+    start: Saturday
+    duration: 45
+    category: shopping
+    difficulty: 0.2
+    importance: 0.6
+    location: supermarket
+    fixed_time: false
+    recurrent: false
+- input: buy a birthday gift by next Wednesday, its moderately important and should take about 30 minutes at the mall
+  output:
+    name: buy birthday gift
+    deadline: next Wednesday
+    duration: 30
+    category: shopping
+    difficulty: 0.2
+    importance: 0.6
+    location: mall
+    fixed_time: false
+    recurrent: false
+- input: order new running shoes online by Friday, its quick 15 minutes and important for the upcoming marathon training
+  output:
+    name: order running shoes
+    deadline: Friday
+    duration: 15
+    category: shopping
+    difficulty: 0.1
+    importance: 0.6
+    fixed_time: false
+    recurrent: false
+- input: debug the login page issue by tomorrow, its challenging probably 2 hours and critical for the release
+  output:
+    name: debug login page
+    deadline: tomorrow
+    duration: 120
+    category: work
+    difficulty: 0.7
+    importance: 0.9
+    fixed_time: false
+    recurrent: false
+- input: send the invoice to the client today, its quick 10 minutes but very important for cash flow
+  output:
+    name: send invoice
+    deadline: today
+    duration: 10
+    category: work
+    difficulty: 0.2
+    importance: 0.85
+    fixed_time: false
+    recurrent: false
+- input: do a HIIT workout every Monday Wednesday Friday at 7am for 30 minutes at the gym, its intense and important for fitness
+    goals
+  output:
+    name: HIIT workout
+    duration: 30
+    category: fitness
+    difficulty: 0.85
+    importance: 0.7
+    location: gym
+    fixed_time: true
+    fixed_start: 07:00
+    recurrent: true
+    recurrence_days: Monday,Wednesday,Friday
+- input: pick up the prescription at the pharmacy by tomorrow, its quick 15 minutes but very important
+  output:
+    name: pick up prescription
+    deadline: tomorrow
+    duration: 15
+    category: health
+    difficulty: 0.1
+    importance: 0.85
+    location: pharmacy
+    fixed_time: false
+    recurrent: false
+- input: complete the math assignment by Thursday at the library, its hard and will take about 2 hours, very important for
+    the grade
+  output:
+    name: math assignment
+    deadline: Thursday
+    duration: 120
+    category: study
+    difficulty: 0.8
+    importance: 0.85
+    location: library
+    fixed_time: false
+    recurrent: false
+- input: water the indoor plants every Tuesday and Friday for 10 minutes at home, its easy but keeps plants healthy
+  output:
+    name: water plants
+    duration: 10
+    category: home
+    difficulty: 0.05
+    importance: 0.3
+    location: home
+    fixed_time: false
+    recurrent: true
+    recurrence_days: Tuesday,Friday
+- input: join the book club meeting every first Thursday at 7pm at the library for 90 minutes, its relaxed and intellectually
+    stimulating
+  output:
+    name: book club meeting
+    duration: 90
+    category: social
+    difficulty: 0.1
+    importance: 0.4
+    location: library
+    fixed_time: true
+    fixed_start: '19:00'
+    recurrent: true
+    recurrence_days: Thursday
+- input: drop off dry cleaning this Saturday at the cleaners on 5th Street, its quick 10 minutes and convenient
+  output:
+    name: drop off dry cleaning
+    start: Saturday
+    duration: 10
+    category: errands
+    difficulty: 0.1
+    importance: 0.3
+    location: dry cleaners
+    fixed_time: false
+    recurrent: false
+- input: arrange airport pickup for next Tuesday at 3pm, its quick 10 minutes to book but important for smooth arrival
+  output:
+    name: arrange airport pickup
+    start: next Tuesday
+    duration: 10
+    category: travel
+    difficulty: 0.2
+    importance: 0.6
+    fixed_time: false
+    recurrent: false
+- input: record a podcast episode this Friday at the home studio for about an hour, its moderately challenging and fun
+  output:
+    name: record podcast
+    start: Friday
+    duration: 60
+    category: creative
+    difficulty: 0.55
+    importance: 0.5
+    location: home studio
+    fixed_time: false
+    recurrent: false
+- input: read the programming tutorial by this weekend at home, its moderately challenging taking about an hour
+  output:
+    name: read programming tutorial
+    deadline: this weekend
+    duration: 60
+    category: learning
+    difficulty: 0.4
+    importance: 0.5
+    location: home
+    fixed_time: false
+    recurrent: false
+- input: change the password for all accounts today, its quick 10 minutes but very important for security
+  output:
+    name: change passwords
+    deadline: today
+    duration: 10
+    category: admin
+    difficulty: 0.1
+    importance: 0.8
+    fixed_time: false
+    recurrent: false
+- input: buy new office supplies at the store by Wednesday, its easy 20 minutes and needed for work setup
+  output:
+    name: buy office supplies
+    deadline: Wednesday
+    duration: 20
+    category: shopping
+    difficulty: 0.1
+    importance: 0.5
+    location: store
+    fixed_time: false
+    recurrent: false
+- input: attend the parent-teacher conference next Thursday at 4pm at the school for an hour, its important for kids education
+  output:
+    name: parent-teacher conference
+    start: next Thursday
+    duration: 60
+    category: family
+    difficulty: 0.3
+    importance: 0.8
+    location: school
+    fixed_time: true
+    fixed_start: '16:00'
+    recurrent: false
+- input: transfer money to savings every first of the month, its quick 5 minutes and important for financial goals
+  output:
+    name: transfer to savings
+    duration: 5
+    category: finance
+    difficulty: 0.1
+    importance: 0.7
+    fixed_time: false
+    recurrent: true
+    recurrence_days: Monday
+- input: call mom every Sunday at 5pm for about 30 minutes, its easy but important for staying connected
+  output:
+    name: call mom
+    duration: 30
+    category: personal
+    difficulty: 0.1
+    importance: 0.7
+    fixed_time: true
+    fixed_start: '17:00'
+    recurrent: true
+    recurrence_days: Sunday
+- input: change category to home
+  output:
+    category: home
+- input: actually this is work
+  output:
+    category: work
+- input: mark as errands
+  output:
+    category: errands
+- input: categorize as learning
+  output:
+    category: learning
+- input: its a finance task
+  output:
+    category: finance
+- input: make it a health activity
+  output:
+    category: health
+- input: switch this to fitness
+  output:
+    category: fitness
+- input: this should be under study
+  output:
+    category: study
+- input: reclassify as personal
+  output:
+    category: personal
+- input: put this in the social category
+  output:
+    category: social
+- input: actually its a travel thing
+  output:
+    category: travel
+- input: make it creative work
+  output:
+    category: creative
+- input: this belongs in admin
+  output:
+    category: admin
+- input: change it to shopping
+  output:
+    category: shopping
+- input: categorize this as family
+  output:
+    category: family
+- input: its really a work task
+  output:
+    category: work
+- input: no this is more of a home chore
+  output:
+    category: home
+- input: actually mark it as health
+  output:
+    category: health
+- input: change the category to finance please
+  output:
+    category: finance
+- input: this is study related not work
+  output:
+    category: study
+- input: make it a fitness activity instead
+  output:
+    category: fitness
+- input: relabel as learning material
+  output:
+    category: learning
+- input: its more of an errand honestly
+  output:
+    category: errands
+- input: switch to social category
+  output:
+    category: social
+- input: this should be personal not work
+  output:
+    category: personal
+- input: categorize under travel
+  output:
+    category: travel
+- input: make it a creative project
+  output:
+    category: creative
+- input: actually its admin work
+  output:
+    category: admin
+- input: change to shopping category
+  output:
+    category: shopping
+- input: this is definitely family related
+  output:
+    category: family
+- input: set category to work
+  output:
+    category: work
+- input: its a home improvement task
+  output:
+    category: home
+- input: make it health related
+  output:
+    category: health
+- input: this is finance not personal
+  output:
+    category: finance
+- input: actually study is the right category
+  output:
+    category: study
+- input: change it to fitness please
+  output:
+    category: fitness
+- input: mark it as a learning task
+  output:
+    category: learning
+- input: its an errand not a chore
+  output:
+    category: errands
+- input: this is social not personal
+  output:
+    category: social
+- input: categorize as travel planning
+  output:
+    category: travel
+- input: make it urgent and move to gym
+  output:
+    importance: 0.95
+    location: gym
+- input: change to work category and set deadline friday
+  output:
+    category: work
+    deadline: Friday
+- input: make it harder and add location at office
+  output:
+    difficulty: 0.85
+    location: office
+- input: push deadline to next week and make it 90 minutes
+  output:
+    deadline: next week
+    duration: 90
+- input: make it high priority and set at 8am
+  output:
+    importance: 0.9
+    fixed_time: true
+    fixed_start: 08:00
+- input: change category to fitness and make it easy
+  output:
+    category: fitness
+    difficulty: 0.15
+- input: add location at home and make it recurring on monday
+  output:
+    location: home
+    recurrent: true
+    recurrence_days: Monday
+- input: make it 2 hours and very important
+  output:
+    duration: 120
+    importance: 0.9
+- input: set time to 3pm and change to work
+  output:
+    fixed_time: true
+    fixed_start: '15:00'
+    category: work
+- input: make it challenging and due tomorrow
+  output:
+    difficulty: 0.8
+    deadline: tomorrow
+- input: move to library and extend to 2 hours
+  output:
+    location: library
+    duration: 120
+- input: make it low priority and flexible time
+  output:
+    importance: 0.15
+    fixed_time: false
+- input: change to health category and set at 7am
+  output:
+    category: health
+    fixed_time: true
+    fixed_start: 07:00
+- input: make it critical and add deadline today
+  output:
+    importance: 0.98
+    deadline: today
+- input: set duration to 30 minutes and location to park
+  output:
+    duration: 30
+    location: park
+- input: make it moderate difficulty and repeat every wednesday
+  output:
+    difficulty: 0.45
+    recurrent: true
+    recurrence_days: Wednesday
+- input: change to study and make it 3 hours
+  output:
+    category: study
+    duration: 180
+- input: make it urgent and start on monday
+  output:
+    importance: 0.95
+    start: Monday
+- input: add coffee shop location and make it 45 minutes
+  output:
+    location: coffee shop
+    duration: 45
+- input: set to finance category and deadline end of month
+  output:
+    category: finance
+    deadline: end of month
+- input: make it easy and schedule for 6pm
+  output:
+    difficulty: 0.15
+    fixed_time: true
+    fixed_start: '18:00'
+- input: change to creative and make it 2 hours long
+  output:
+    category: creative
+    duration: 120
+- input: make it very hard and at the office
+  output:
+    difficulty: 0.9
+    location: office
+- input: set recurrence to tuesday thursday and make important
+  output:
+    recurrent: true
+    recurrence_days: Tuesday,Thursday
+    importance: 0.8
+- input: move deadline to next monday and make it 60 minutes
+  output:
+    deadline: next Monday
+    duration: 60
+- input: change to personal category and set at home
+  output:
+    category: personal
+    location: home
+- input: make it moderate and due this week
+  output:
+    difficulty: 0.5
+    deadline: this week
+- input: add location at gym and make it 45 minutes hard
+  output:
+    location: gym
+    duration: 45
+    difficulty: 0.8
+- input: set to learning and make it start next week
+  output:
+    category: learning
+    start: next week
+- input: make it critical priority and at the library for 2 hours
+  output:
+    importance: 0.98
+    location: library
+    duration: 120

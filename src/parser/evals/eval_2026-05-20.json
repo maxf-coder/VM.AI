@@ -1,0 +1,104 @@
+{
+  "config": {
+    "mode": "both",
+    "seed": 42,
+    "test_size": 0.1,
+    "checkpoint": "D:\\Users\\user\\Desktop\\VM.AI\\models/finetuned_parser",
+    "num_beams": 1
+  },
+  "accuracy": {
+    "acc_name": 0.9833,
+    "acc_start": 0.934,
+    "acc_deadline": 0.8836,
+    "acc_difficulty": 0.2432,
+    "acc_importance": 0.2617,
+    "acc_duration": 0.4904,
+    "acc_category": 0.5214,
+    "acc_location": 0.8168,
+    "acc_fixed_time": 0.999,
+    "acc_fixed_start": 0.9888,
+    "acc_recurrent": 0.9969,
+    "acc_recurrence_days": 0.8772,
+    "acc_overall": 0.6605
+  },
+  "detailed": {
+    "name": {
+      "type": "string_match",
+      "accuracy": 0.9833,
+      "correct": 825,
+      "total": 839
+    },
+    "start": {
+      "type": "string_match",
+      "accuracy": 1.0,
+      "correct": 184,
+      "total": 184
+    },
+    "deadline": {
+      "type": "classification",
+      "accuracy": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "support": 205,
+      "n_classes": 12
+    },
+    "difficulty": {
+      "type": "regression",
+      "mse": 0.0152,
+      "rmse": 0.1235,
+      "mae": 0.0866,
+      "r2": 0.5997,
+      "support": 1028
+    },
+    "importance": {
+      "type": "regression",
+      "mse": 0.0124,
+      "rmse": 0.1113,
+      "mae": 0.0682,
+      "r2": 0.741,
+      "support": 1043
+    },
+    "duration": {
+      "type": "string_match",
+      "accuracy": 0.4904,
+      "correct": 459,
+      "total": 936
+    },
+    "category": {
+      "type": "classification",
+      "accuracy": 0.5214,
+      "f1_macro": 0.7069,
+      "f1_weighted": 0.505,
+      "precision_macro": 0.7991,
+      "recall_macro": 0.6709,
+      "support": 911,
+      "n_classes": 15
+    },
+    "location": {
+      "type": "classification",
+      "accuracy": 1.0,
+      "f1_macro": 1.0,
+      "f1_weighted": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "support": 107,
+      "n_classes": 8
+    },
+    "fixed_time": {
+      "type": "binary",
+      "accuracy": 0.999,
+      "f1": 0.9972,
+      "precision": 0.9944,
+      "recall": 1.0,
+      "support": 970
+    },
+    "fixed_start": {
+      "type": "string_match",
+      "accuracy": 0.9888,
+      "correct": 177,
+      "total": 179
+    }
+  }
+}

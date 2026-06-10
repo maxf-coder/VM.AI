@@ -1,0 +1,59 @@
+paths:
+  model_cache: models/google-t5/t5-base
+  output_dir: models/finetuned_parser
+  synthetic_data: data/VMAI_SYNTHETIC_Data.yaml
+  real_data: data/VMAI_REAL_Data.yaml
+  specific_data: data/VMAI_SPECIFIC_Data.yaml
+
+defaults:
+  per_device_eval_batch_size: 8
+  logging_steps: 50
+
+modes:
+  both:
+    num_train_epochs: 12
+    max_limit: 15000
+    per_device_train_batch_size: 8
+    gradient_accumulation_steps: 16
+    learning_rate_fresh: 3e-5
+    learning_rate_resume: 5e-6
+
+  synthetic:
+    num_train_epochs: 10
+    max_limit: 10000
+    per_device_train_batch_size: 8
+    gradient_accumulation_steps: 16
+    learning_rate_fresh: 2e-5
+    learning_rate_resume: 2e-5
+
+  real:
+    num_train_epochs: 3
+    max_limit: 500
+    per_device_train_batch_size: 4
+    gradient_accumulation_steps: 16
+    learning_rate_fresh: 2e-5
+    learning_rate_resume: 5e-6
+
+  specific:
+    num_train_epochs: 8
+    max_limit: 1000
+    per_device_train_batch_size: 8
+    gradient_accumulation_steps: 16
+    learning_rate_fresh: 3e-6
+    learning_rate_resume: 2e-6
+
+  modify_only:
+    num_train_epochs: 10
+    max_limit: 3000
+    per_device_train_batch_size: 4
+    gradient_accumulation_steps: 16
+    learning_rate_fresh: 5e-6
+    learning_rate_resume: 5e-6
+
+  default:
+    num_train_epochs: 5
+    max_limit: 9000
+    per_device_train_batch_size: 4
+    gradient_accumulation_steps: 32
+    learning_rate_fresh: 2e-5
+    learning_rate_resume: 5e-6
