@@ -1,9 +1,13 @@
+import logging
 import os
 import re
+import time
 
 import joblib
 import numpy as np
 from sentence_transformers import SentenceTransformer
+
+logger = logging.getLogger(__name__)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 MODELS_DIR = os.path.join(ROOT, "models", "regressors")
@@ -84,11 +88,27 @@ def extract_lexical_features(texts):
 
 class RegressorPredictor:
     def __init__(self):
-        self.encoder = SentenceTransformer('all-mpnet-base-v2')
+        self.encoder = self._load_encoder()
         self.diff_model = joblib.load(DIFF_PATH)
         self.imp_model = joblib.load(IMP_PATH)
         self.tfidf = joblib.load(TFIDF_PATH)
         self.svd = joblib.load(SVD_PATH)
+
+    @staticmethod
+    def _load_encoder():
+        try:
+            return SentenceTransformer('all-mpnet-base-v2', local_files_only=True)
+        except Exception:
+            logger.warning("Model not cached locally, downloading from HuggingFace Hub...")
+            for attempt in range(3):
+                try:
+                    return SentenceTransformer('all-mpnet-base-v2')
+                except Exception as e:
+                    logger.warning(f"Download attempt {attempt + 1}/3 failed: {e}")
+                    if attempt < 2:
+                        time.sleep(2 ** attempt)
+            logger.error("All download attempts failed, retrying with local_files_only...")
+            return SentenceTransformer('all-mpnet-base-v2', local_files_only=True)
 
     def _build_features(self, text):
         emb = self.encoder.encode(text, show_progress_bar=False)
